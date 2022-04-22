@@ -14,8 +14,6 @@ public:
         else{
             ds.push_back(root->val);
             checkPath(root->left,sum,ds,ans,target);
-            ds.pop_back();
-            ds.push_back(root->val);
             checkPath(root->right,sum,ds,ans,target);
             ds.pop_back();
         }
